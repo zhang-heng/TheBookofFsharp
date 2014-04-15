@@ -1,0 +1,25 @@
+\documentclass{book}
+
+\usepackage{xeCJK}
+\setCJKmainfont{WenQuanYi Micro Hei}
+\begin{document}
+
+PREFACE
+
+Ever since I started touting the benefits of F\#, people have asked me why I chose to learn F\# over other functional languages like Scala, Erlang, or Haskell. This line of questioning presupposes that I intentionally set out to learn a functional language. In reality, adopting F\# was an organic progression from C\#.
+
+My F\# story begins late in the summer of 2010. I was burning out and my career was stagnating. My employer at the time was fairly risk-averse and had proprietary frameworks for nearly every facet of the application. After an extended amount of time in this environment, I lost sight of what I loved about developing software and did the worst thing anyone in this industry can do: I stopped learning.
+
+It was around this time that the company hired a new architect who brought with him not only a wealth of technical knowledge but also some- thing I’d lost: passion for the craft. His excitement reminded me of what I’d forgotten and gave me the kick I needed to get back in the game.
+
+With renewed interest, I started looking at some of the technologies I missed while I was in that rut. Of everything I looked at, the one that really caught my attention was LINQ, a domain-specific language built upon functional principles to provide a unified mechanism for data access across disparate formats. It has been said that LINQ is a gateway drug for functional programming, and in my case, this was definitely true. I’d never really done any “true” functional programming before LINQ, so it was an exciting new world for me. Like many developers learning LINQ, I was introduced to it through the query syntax, but as my comfort level increased, I gradually started exploring how it worked.
+
+Not long into my studies, I learned that query expressions were added only after some usability studies revealed that developers were confused by the lambda expressions and method chaining syntax. What struck me about this was how natural the method syntax felt. I even found myself favoring it over the query syntax in most cases. (Confession: To this day I can’t seem to remember the method syntax for an outer join.) As I continued to work with LINQ, I began to realize that the method syntax felt natural because it matched the way I think. I didn’t have terms for them at the time, but the functional concepts of delegation, higher-order functions, and composability really matched up with my mental model of how the world works.
+
+It didn’t take long for me to start carrying over the functional concepts I learned from LINQ into other areas of our application. In doing so, I found that the quality of my work was improving and my code was getting more predictable. Despite this newfound power, I found myself getting increasingly frustrated with C\#, but I couldn’t pinpoint exactly what was bothering me.
+
+I was mowing the lawn on a hot, summer afternoon when I had my epiphany. On a whim, I’d included Hanselminutes \#311 in that day’s yardwork podcast selection. The guests, Richard Minerich and Phillip Trelford,were discussing F\#, a functional language built upon the .NET platform. I was already intrigued, but then Phillip made a quip that perfectly summarized one of my gripes about C\#’s repetitive nature: Writing C\# feels like filling out government forms in triplicate. As the conversation continued, Richard and Phillip touched on several other points, like improved predictability of code and streamlined type creation, that really struck a chord with me. By the end of the podcast, I was hooked and determined to take advantage of this powerful language called F\#.
+
+Since that day—despite its reputation as a niche language—F\# has become one of the primary tools in my developer toolbox. It has played an important role in each of my recent projects, as my go-to language for business logic, unit testing, and prototyping. I even used F\# to successfully orchestrate queue-based communication between services in a distributed application. As you read this book, it is my hope that you’ll recognize how F\# can make you more productive and improve the quality of your code, regardless of the type of project you’re working on.
+
+\end{document}

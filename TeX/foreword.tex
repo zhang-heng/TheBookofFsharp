@@ -1,0 +1,34 @@
+\documentclass{book}
+
+\usepackage{xeCJK}
+\setCJKmainfont{WenQuanYi Micro Hei}
+\begin{document}
+
+FOREWORD
+
+I met Dave at the Microsoft MVP Summit in Redmond in 2013. We witnessed something unexpected: F\# caught fire. The language hadn’t changed drastically, but the attitudes of the developers at the Summithad. During the past year, MVPs had been learning about functional programming, and there was a new excitement around the language. Over the week, I learned of several C\# MVPs who were jumping ship to F\#. Dave and I talked about the transformation. We also talked about ethics in the context of object-oriented (OO) and functional programming (FP). Here is my story about that ...
+
+During college in the early 90s, I was immersed in operations management where the focus was quality, continuous improvement, just-in-time strategy, and waste elimination. W. Edwards Deming was a hero to my professors, and we studied Deming’s huge impact on Japanese manufacturing from the 1950s onward. Finding the root cause of defects and fixing them at the source was “the good.” Shipping defective product or tacking inspection at the end of the line was “the bad.” These ideas resonated with me deeply.
+
+Continuous improvement seemed more than just a way to make widgets; it felt like a way to live life. It echoed Socrates’s concept of virtue; it evoked the story of Siddhartha, who sought truth over comfort. These are ideas about “what should be,” about merit, about substance over rhetoric, about correctness.
+
+After graduation I rolled into a software development career. Depending on the company, it was either clown cars and cowboys, or rigid waterfall. Both were exciting, but no one in either environment was talking about quality or continuous improvement. When I would bring it up, I would get sad smiles from grizzled developers. Their eyes said, “Son, don’t you realize this is war?” The operating systems were crashy, the dev tools were buggy, and everything was closed source and proprietary. Thucydides said war is “a rough master that brings most men’s characters to a level with their fortune.” Likewise, when the development environment is bad, most developers will write bad code.
+
+In 2001, a group of conscientious software developers got together in Snowbird, Utah and signed the Agile Manifesto. About a year later I discovered it. From my perspective, it seemed like a retelling of Deming, operations management, and Lean manufacturing. It was the first time in my career that I’d heard developers discussing quality and continuous improvement. There was hope!
+
+After five years of test-driven development, pair programming, the SOLID principles (single responsibility, open/closed, Liskov substitution, interface segregation, and dependency inversion), and Scrum, my hope had mostly worn away. I continued to fight my tools, and it remained difficult to build quality software. Without discipline it was a train wreck. With discipline, process, and diligence, it was a hard slog.
+
+Through pure good luck I encountered Erlang in 2007, and in 2009 I began working with F\#. Functional programming consumed me. I learned about immutability, recursion, pattern matching, higher-order functions, referential transparency, code as data, and separation of behavior fromdata. As I learned and practiced I began to see the huge cost of OO. So much of what made my day-to-day coding life miserable was solvable with Erlang and F\#. As I told people about FP, I again received those sad smiles that asked, “Don’t you know we are at war?” I took it differently this time. I decided, “OK, sure. Let’s call it war. I’ll be on the side that’s looking at the root cause of defects. I’ll be on the side that wants to fix the problem at the source.”
+
+The next stage for Agile must be to fully unravel itself from OO. Object-oriented programming had boldly promised “to model the world.” Well, the world is a scary place where bad things happen for no apparent reason, and in this narrow sense I concede that OO does model the world. OO as we have it mingles data and behavior; the result is low cohesion and tight coupling. In OO, there is shared mutable state, which makes concurrency impossibly difficult. In OO, logic is nondeterministic. In OO, the result of a function doesn’t simply depend on the arguments we pass in. The result may vary depending on arguments passed on previous calls to the function. How about mutations from other functions? How How about properties and fields? How about access from other threads? With every method call, we worry about the whole environment. Joe Armstrong describes the problem with OO languages like this: “They’ve got all this implicit environment that they carry around with them. You wanted a banana, but what you got was a gorilla holding the banana and the entire jungle.” OO is a dangerous place.
+
+Alan Kay once said, “I invented the term object-oriented and I can tell you I did not have C++ in mind.” What Alan Kay described was message passing, isolation between objects, and polymorphism. That describes the functional programming language Erlang better than it describes Java! So what the devil happened? Were C++, Java, and C\# billion-dollar mondegreens (misheard lyrics)? Just imagine Alan Kay as Jimi Hendrix with a whole industry in an OO haze, mouthing, “’Scuse me while I kiss this guy.” Who sold us this mess?
+
+I’ll wind down with a lie that OO people who are learning FP tell one another: “Learning FP will make you a better OO programmer.” It rings true, and in the short run it may even be true, but as you internalize immutability, recursion, pattern matching, higher-order functions, code as data, separation of behavior from data, and referential transparency, you will begin to despise OO. Personally, I went from being a Microsoft C\# MVP to feeling guilt every time I created a new class file. Once you understand the defects that can be avoided, it stops being a technical choice and becomes an ethical one.
+
+The good news is F\# is a great language, and this is a fantastic book. They both create an easy pathway from the OO world to a cleaner, safer functional world. I’m delighted you’re about to walk this path.
+
+Bryan Hunter
+CTO, Firefly Logic
+
+\end{document}
